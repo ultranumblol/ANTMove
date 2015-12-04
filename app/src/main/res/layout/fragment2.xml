@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="90dp"
+            android:gravity="center"
+            android:layout_height="33dp"
+            android:text="已妥投"
+            android:textColor="@color/red"
+            android:id="@+id/tuotou_tv"
+            android:background="@drawable/btn_red5_selector_left"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="33dp"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/untuotou_tv"
+            android:background="@drawable/bordergray_table_rightradius_ontrans_pressed"
+            android:text="未妥投"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/untuotou_lv"
+        ></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tuotou_lv"
+            ></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
